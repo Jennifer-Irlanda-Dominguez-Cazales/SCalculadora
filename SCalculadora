@@ -1,0 +1,53 @@
+package scalculadora;
+import java.util.Scanner;
+/**
+ *
+ * @author Jennifer Irlanda Dominguez Cazales
+ */
+public class SCalculadora {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Operaciones muestra = new Operaciones();
+     Scanner leer = new Scanner(System.in);   
+     int num;
+     boolean a=true;
+     do{
+         System.out.println("\nQue deseas hacer?");
+         System.out.println("1.Sumar");
+         System.out.println("2.-Restar");
+         System.out.println("3.-Dividir");
+         System.out.println("4.-Multiplicar");
+         System.out.println("5.- Salir");
+         num=leer.nextInt();
+         switch (num) {
+             case 1:
+                 muestra.Suma();
+        break;
+        //
+        case 2:
+            muestra.Resta();
+        break;
+        //
+        case 3:
+            muestra.Division();
+        break;
+        //
+        case 4:
+            muestra.Multiplicacion();
+        break;
+        
+        case 5:
+            a=false;
+        break;
+        
+        default:
+            System.err.println("Solo se aceptan numeros enteros entre 1 y 5");
+            break;
+ }      
+     }     while(a);
+    }
+    
+}
