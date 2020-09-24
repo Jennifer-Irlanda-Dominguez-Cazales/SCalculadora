@@ -1,0 +1,36 @@
+package scalculadora;
+import java.util.Scanner;
+public  class Operaciones {
+    Scanner leer=new Scanner(System.in);
+    double x,y;
+    public void Suma() {
+      System.out.println("\nIngresa el primer valor");
+      x=leer.nextDouble();
+      System.out.println("Ingresa el segundo valor valor");
+      y=leer.nextDouble();
+        System.out.println("Es resultado de la suma es "+(x+y));
+   }
+    public void Resta() {
+      System.out.println("\nIngresa el primer valor");
+      x=leer.nextDouble();
+      System.out.println("Ingresa el segundo valor valor");
+      y=leer.nextDouble();
+        System.out.println("Es resultado de la resta es "+(x-y));
+   }
+    public void Multiplicacion() {
+      System.out.println("\nIngresa el primer valor");
+      x=leer.nextDouble();
+      System.out.println("Ingresa el segundo valor valor");
+      y=leer.nextDouble();
+        System.out.println("Es resultado de la multiplicacion es "+(x*y));
+   }
+    public void Division() {
+      System.out.println("\nIngresa el primer valor");
+      x=leer.nextDouble();
+      System.out.println("Ingresa el segundo valor valor");
+      y=leer.nextDouble();
+        System.out.println("Es resultado de la division es "+(x/y));
+   }
+    
+
+}
